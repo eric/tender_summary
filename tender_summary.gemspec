@@ -13,7 +13,7 @@ Gem::Specification.new do |s|
   ## If your rubyforge_project name is different, then edit it and comment out
   ## the sub! line in the Rakefile
   s.name              = 'tender_summary'
-  s.version           = '1.1.0'
+  s.version           = '1.2.0'
   s.date              = '2010-12-09'
   s.rubyforge_project = 'tender_summary'
 
@@ -57,6 +57,8 @@ Gem::Specification.new do |s|
   ## THE MANIFEST COMMENTS, they are used as delimiters by the task.
   # = MANIFEST =
   s.files = %w[
+    Gemfile
+    Gemfile.lock
     LICENSE
     README.md
     Rakefile
@@ -68,7 +70,7 @@ Gem::Specification.new do |s|
     lib/tender_summary/tender_api.rb
     tender_summary.gemspec
     test/helper.rb
-    test/test_tender-summary.rb
+    test/test_tender_summary.rb
   ]
   # = MANIFEST =
 

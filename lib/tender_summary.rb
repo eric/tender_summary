@@ -8,5 +8,5 @@ require 'tender_summary/tender_api'
 require 'tender_summary/mailer'
 
 module TenderSummary
-  VERSION = '1.1.0'
+  VERSION = '1.2.0'
 end
