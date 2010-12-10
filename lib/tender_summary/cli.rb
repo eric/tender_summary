@@ -1,7 +1,7 @@
 
 module TenderSummary
   class Cli
-    attr_accessor :to, :from
+    attr_accessor :to, :from, :output
 
     def initialize(argv)
       @argv = argv.dup
@@ -10,7 +10,14 @@ module TenderSummary
     def run
       self.parse
 
-      TenderSummary::Mailer.deliver_pending(self.to, self.from)
+      if output.present?
+        mail = TenderSummary::Mailer.create_pending(self.to, self.from)
+        open(output, 'w') do |io|
+          io << mail.parts.first.body
+        end
+      else
+        TenderSummary::Mailer.deliver_pending(self.to, self.from)
+      end
     end
 
     def parse
@@ -38,6 +45,10 @@ module TenderSummary
 
         opts.on("-f", "--from FROM", "Email address to use for From") do |n|
           self.from = n
+        end
+
+        opts.on("-o", "--output FILE", "Output HTML to file instead of sending") do |n|
+          self.output = n
         end
 
         opts.separator " "

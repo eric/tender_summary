@@ -1,0 +1,33 @@
+PATH
+  remote: .
+  specs:
+    tender_summary (1.1.0)
+      actionmailer (~> 2.3.5)
+      addressable (~> 2.1.1)
+      httparty (~> 0.4.5)
+
+GEM
+  remote: http://rubygems.org/
+  specs:
+    actionmailer (2.3.10)
+      actionpack (= 2.3.10)
+    actionpack (2.3.10)
+      activesupport (= 2.3.10)
+      rack (~> 1.1.0)
+    activesupport (2.3.10)
+    addressable (2.1.2)
+    crack (0.1.8)
+    httparty (0.4.5)
+      crack (>= 0.1.1)
+    rack (1.1.0)
+    shoulda (2.11.3)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  actionmailer (~> 2.3.5)
+  addressable (~> 2.1.1)
+  httparty (~> 0.4.5)
+  shoulda
+  tender_summary!
