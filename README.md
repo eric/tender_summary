@@ -1,4 +1,4 @@
-= Tender Summary
+# Tender Summary
 
 Use this with cron or launchd to send summary emails of your Tender 
 discussions.
@@ -6,36 +6,36 @@ discussions.
 It will include all pending discussions in the email.
 
 
-== Installation
+## Installation
 
 To install, just run:
 
- $ sudo gem install tender_summary
+    $ sudo gem install tender_summary
 
 
-== Usage
+## Usage
 
 An example crontab entry:
 
- 0 9 * * * tender_summary -s tenderaccount -u robot@tenderaccount.com -p XXXX6zxY7b -t eric@tenderaccount.com -f 'Support <support@tenderaccount.com>'
+    0 9 * * * tender_summary -s tenderaccount -u robot@tenderaccount.com -p XXXX6zxY7b -t eric@tenderaccount.com -f 'Support <support@tenderaccount.com>'
 
 Note: The password for the account will be visible in the system process 
 table when the program is running.
 
 
-== Inspiration
+## Inspiration
 
 The styling used and inspiration was taken from the 
-{Basecamp}[http://www.basecamphq.com] daily summary emails. They look 
+[Basecamp][http://www.basecamphq.com] daily summary emails. They look 
 really nice.
 
 
-== TODO
+## TODO
 
 * Add command line option for customized view
 
 
-== Note on Patches/Pull Requests
+## Note on Patches/Pull Requests
  
 * Fork the project.
 * Make your feature addition or bug fix.
@@ -46,6 +46,6 @@ really nice.
 * Send me a pull request. Bonus points for topic branches.
 
 
-== Copyright
+## Copyright
 
 Copyright (c) 2009 Eric Lindvall. See LICENSE for details.

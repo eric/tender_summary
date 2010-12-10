@@ -6,3 +6,7 @@ require 'optparse'
 require 'tender_summary/cli'
 require 'tender_summary/tender_api'
 require 'tender_summary/mailer'
+
+module TenderSummary
+  VERSION = '1.1.0'
+end
