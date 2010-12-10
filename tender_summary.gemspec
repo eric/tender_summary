@@ -59,15 +59,15 @@ Gem::Specification.new do |s|
   # = MANIFEST =
   s.files = %w[
     LICENSE
-    README.rdoc
+    README.md
     Rakefile
-    VERSION
     bin/tender_summary
     lib/tender_summary.rb
     lib/tender_summary/cli.rb
     lib/tender_summary/mailer.rb
     lib/tender_summary/templates/mailer/pending.text.html.erb
     lib/tender_summary/tender_api.rb
+    tender_summary.gemspec
     test/helper.rb
     test/test_tender-summary.rb
   ]
